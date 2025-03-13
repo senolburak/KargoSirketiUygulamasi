@@ -28,12 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            txtKargo = new TextBox();
+            btnNoEkle = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label1.Location = new Point(12, 59);
+            label1.Name = "label1";
+            label1.Size = new Size(140, 20);
+            label1.TabIndex = 0;
+            label1.Text = "KARGO NUMARASI";
+            // 
+            // txtKargo
+            // 
+            txtKargo.Location = new Point(158, 56);
+            txtKargo.Name = "txtKargo";
+            txtKargo.Size = new Size(174, 27);
+            txtKargo.TabIndex = 1;
+            // 
+            // btnNoEkle
+            // 
+            btnNoEkle.Location = new Point(198, 99);
+            btnNoEkle.Name = "btnNoEkle";
+            btnNoEkle.Size = new Size(94, 29);
+            btnNoEkle.TabIndex = 2;
+            btnNoEkle.Text = "Ekle";
+            btnNoEkle.UseVisualStyleBackColor = true;
+            btnNoEkle.Click += btnNoEkle_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(406, 171);
+            Controls.Add(btnNoEkle);
+            Controls.Add(txtKargo);
+            Controls.Add(label1);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Kargo Takip";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtKargo;
+        private Button btnNoEkle;
     }
 }
